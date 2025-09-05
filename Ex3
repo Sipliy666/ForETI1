@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int rows, seatsPerRow;
+	int floors = 3;
+	cout << "Enter number of rows:";
+	cin >> rows;
+	cout << "Enter number of seats per row:";
+	cin >> seatsPerRow;
+
+	int totalSeats = rows * seatsPerRow * floors;
+	cout << "Total number of seats in the сonference hall:" << totalSeats << "\n";
+
+	int floors2 = 3;
+	int totalSeats2 = 0;
+	for (int i = 1; i <= floors; ++i) //Створюється змінна i, яка приймає значення від 1 до 3 включно і збільшується на 1 після кожної ітерації циклу, поки не досягне 3, for є початком циклу
+	{
+		int rows2, seatsPerRow2;
+		cout << "Floor:" << i << ":" << "\n";
+		cout << "Enter number of rows:";
+		cin >> rows2;
+		cout << "Enter numbers of seats per row:";
+		cin >> seatsPerRow2;
+		totalSeats2 += rows2 * seatsPerRow2;
+	}
+	cout << "Total number of seats in the сonference hall:" << totalSeats2 << "\n";
+	return 0;
+}
