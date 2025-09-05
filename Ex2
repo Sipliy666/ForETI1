@@ -1,1 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	string Surname = "Petrenko";
+	char Name[5] = "Anna";
+    int Age = 20;
+	char gender = 'W';
+	float Height = 1.76;
 
+	string Surname2 = "Ivanov";
+	char Name2[5] = "Ivan";
+	int Age2 = 21;
+	char gender2 = 'M';
+	float Height2 = 1.84;
+
+	cout << "Surname:" << Surname << "\n";
+	cout << "Name:" << Name << "\n";
+	cout << "Age:" << Age << "\n";
+	cout << "Height:" << Height << "\n";
+
+	cout << "\n" << "Surname:" << Surname2 << "\n";
+	cout << "Name:" << Name2 << "\n";
+	cout << "Age:" << Age2 << "\n";
+	cout << "Height:" << Height2 << "\n";
+
+    return 0;
+}
